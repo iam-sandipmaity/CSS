@@ -1,0 +1,35 @@
+h1{
+    color: red;
+}
+
+div{
+    background: antiquewhite;
+    color: blue;
+    font-size: 20px;
+}
+p{
+    color: darkorchid;
+}
+#red{
+    color: white;
+    background: red;
+}
+
+/* we can select multiple group of selecter like this  */
+
+.blue,h3,h4,h5,h6{
+    background: blue;
+    color: white;
+    border: black;
+}
+
+/* we can use element class as a selecter like this */
+P.red,div.red{
+    color: red;
+}
+
+/* we cxan use a universal selector to select all the element  */
+*{
+    margin: 0;
+    padding: 0;
+}

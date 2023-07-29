@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Position Property</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            background-color: black;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        nav ul li{
+            display: inline-block;
+            padding: 2vh 2vw;
+            margin: 10px;
+            font-size: 1em;
+        }
+        .container{
+            background-color: aqua;
+            width: 50vw;
+            height: 500vh;
+            margin: auto;
+            padding: 0px 10px;
+            position: relative;
+            z-index: 1;
+        }
+        p{
+            border: 4px solid gray;
+            margin: 2vh 3vw;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            /* background-color: yellowgreen; */
+            background: url("bg.jpg") no-repeat ;
+            right: 0;
+            bottom: 0;
+        }
+            
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(121, 28, 192);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis fugiat, inventore harum eligendi facere, non hic iure cumque rerum, exercitationem iusto. Molestias cumque nesciunt facere quos sequi sint exercitationem expedita voluptate eaque rem distinctio dolorum quas officiis, voluptatibus atque aut impedit sunt officia assumenda quia.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptates. At ipsa beatae dolor illo quisquam possimus quasi, natus maiores voluptas voluptatibus soluta asperiores provident quos itaque harum sequi architecto libero qui fugiat tempora sunt dolorem eaque fuga nostrum? Soluta incidunt architecto, iusto delectus sequi consequatur repudiandae pariatur quas fugit? Tenetur quidem esse incidunt autem at amet maiores ratione dicta expedita dolorum? Ea veniam, temporibus velit molestias nihil aut dolorem iste labore quam voluptas illum facere alias quae, rerum laboriosam placeat porro at quaerat rem sequi quis libero fugit. Sint, in cumque neque est sequi veniam laudantium itaque eos vitae tempora aliquam velit maxime quod quaerat, minima quo ad nostrum, ea vel iste dolores nulla beatae possimus! Delectus ad et obcaecati veritatis possimus illo voluptas id unde amet in vel, maiores enim inventore debitis quam repudiandae accusantium quas. Quaerat iure quia earum nihil voluptatum iste vel, modi, aspernatur culpa consequuntur odio laudantium tempora aperiam voluptatibus adipisci illum ab rem esse ducimus quod distinctio quam porro suscipit dolore? Esse culpa, ipsum quia quae, nam error soluta labore velit numquam facere quis ea enim harum dolore at necessitatibus amet est sint aspernatur pariatur? Quisquam maxime harum voluptatum modi voluptatem rerum suscipit doloribus adipisci voluptates est in non tempora quod ullam praesentium et ipsam consequuntur quia sit at asperiores sint, laboriosam dolor. Similique nihil dolores natus. Laudantium nam aperiam consequatur, cum itaque consequuntur nobis assumenda quam voluptate reprehenderit ut voluptates, consectetur deserunt? Error commodi ut sequi natus amet unde quis molestiae, eos sint. Deleniti, quasi quod, maxime velit voluptatibus architecto minus doloremque repellat eum saepe voluptate a libero, reprehenderit expedita provident itaque aperiam illum modi mollitia magnam. Ipsa, neque voluptas. Reiciendis, laboriosam nihil? Nobis nisi tempore ab veritatis mollitia voluptatibus rerum repellendus, consequuntur aut soluta sint tenetur, assumenda neque recusandae laudantium iusto nemo.
+            </p>
+            <div class="box1 like_bottom">
+                I am Box1
+            </div>
+            <div class="box2">
+                I am Box2
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>

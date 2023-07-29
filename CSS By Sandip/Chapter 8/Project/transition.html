@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property</title>
+    <style>
+        .container{
+            height: 60vh;
+            margin: auto;
+            background-color: aqua;
+            color: coral;
+        }
+        .box{
+            border: 3px solid black;
+            
+        }
+        img{
+            width: 500px;
+            /* transition-property: width;
+            transition-duration: 2s;
+            transition-delay: 2s;
+            transition-timing-function: ease-in; */
+            transition: width 1s ease-in-out 2s;
+        }
+        img:hover{
+            width: 56px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="img.jpg" alt="">
+            <img src="https://source.unsplash.com/WLUHO9A_xik/500x200" alt="specific">
+        </div>
+    </div>
+</body>
+</html>

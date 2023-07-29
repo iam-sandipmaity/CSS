@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    /* width: 344px;
+    height: 744px;
+    background: rgb(94,26,184);
+    border: 2px solid red;
+    color: white;
+    background-image: url("index.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-size: 63px 45px;
+    background-position: top;
+    background-attachment: fixed; */
+
+
+    /* we can make a short hand to fix the image in the web page  */
+    font-size: 20px;
+
+    background: red url("index.jpg") no-repeat fixed right top;
+
+}
+
+h1,
+h2 {
+    color: gold;
+    background: green;
+}
+
+/* body{
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+} */

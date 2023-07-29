@@ -1,0 +1,97 @@
+<!-- Create A Layout Using Flex Box. Where a navbar then A background then 3 div box will exist. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 Practice Set</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgba(36, 1, 59, 0.792);
+        }
+        header{
+            height: 10vh;
+            background-color: black;
+            color: white;
+        }
+        
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 20px;
+            font-size: 5vh;
+        }
+        .logo{
+            padding: 20px 10px;
+        }
+        .img{
+            height: 20vh;
+            background-color: blue;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .left{
+            background-color: aqua;
+            height: 50vh;
+            width: 25vw;
+            margin: 50px 0px;
+        }
+        .middle{
+            background-color: rgb(227, 34, 175);
+            height: 50vh;
+            width: 25vw;
+            margin: 50px 0px;
+        }
+        .right{
+            background-color: rgb(227, 158, 7);
+            height: 50vh;
+            width: 25vw;
+            margin: 50px 0px;
+        }
+        footer{
+            height: 10vh;
+            background-color: black;
+            color: white;
+        }
+        .foot{
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><img src="/bg.jpg" alt="logo" height="25px" width="25px"></li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="img"></div>
+        <div class="container">
+            <div class="left"></div>
+            <div class="middle"></div>
+            <div class="right"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            ALl The Copyright Reserve To &copy; Sandip Maity
+        </div>
+    </footer>
+</body>
+</html>

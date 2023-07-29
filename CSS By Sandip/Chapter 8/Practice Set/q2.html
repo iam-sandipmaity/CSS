@@ -1,0 +1,45 @@
+<!-- Create a thin progress bar animation for a website using transition -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .progress:hover{
+            width: 100vw;
+        }
+        .progress{
+            width: 1vw;
+            height: 6px;
+            background-color: red;
+            transition: width 1s ease-in-out;
+        }
+        header{
+            height: 10vh;
+            background-color: black;
+            color: white;
+        }
+        .container{
+            height: 80vh;
+            background-color: aqua;
+            font-size: large;
+            padding: 5vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header></header>
+    <main>
+        <div class="container">
+            Please hover in the progree bar to see the progree bar animatin
+        </div>
+    </main>
+</body>
+</html>

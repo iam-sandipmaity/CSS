@@ -1,0 +1,70 @@
+<!-- Create a Layout of your choice using Flexbox -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 Practice Set</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            /* height: 13vh; */
+            height: 4em;
+            background-color: black;
+            color: white;
+        }
+        ul{
+            padding: 20px;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            font-size: 3vw;
+            padding: 0px 5vw;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        .left{
+            height: 80vh;
+            width: 40vw;
+            padding: 5px 20px;
+            background-color: aqua;
+        }
+        .right{
+            height: 80vh;
+            width: 40vw;
+            padding: 5px 20px;
+            background-color: rgb(30, 22, 183);
+        }
+    </style>
+</head> 
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="left">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente commodi optio ex aperiam dicta dolore adipisci magnam reiciendis, placeat, explicabo, aliquid soluta quis.
+            </div>
+            <div class="right">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, incidunt, sunt sed voluptas a minus ea adipisci, nisi rem magnam assumenda accusantium? Id magni numquam vel facere nisi ducimus accusamus reprehenderit. Itaque, impedit animi!
+            </div>
+        </div>
+    </main>
+</body>
+</html>

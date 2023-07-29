@@ -1,0 +1,105 @@
+<!-- Create a layout using css grid  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7 Practice Set</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+        }
+
+        ul {
+            display: inline-grid;
+            grid-template-columns: 70vw 10vw 10vw 10vw;
+        }
+
+        ul li {
+            list-style-type: none;
+            margin: 10px 10px;
+            font-size: large;
+        }
+
+        .image {
+            height: 28vh;
+            background-color: blueviolet;
+            background: url('bg.jpg');
+        }
+
+        .container {
+            display: inline-grid;
+            background-color: dimgray;
+            grid-template-columns: 33vw 33vw 33vw;
+            justify-content: space-around;
+        }
+
+        .left {
+            background-color: aqua;
+            height: 50vh;
+            width: 25vw;
+            margin: 50px 0px 0px 50px;
+            background: url('img.jpg');
+        }
+
+        .middle {
+            background-color: rgb(227, 34, 175);
+            height: 50vh;
+            width: 25vw;
+            margin: 50px 0px;
+            background: url('img.jpg');
+        }
+
+        .right {
+            background-color: rgb(227, 158, 7);
+            height: 50vh;
+            width: 25vw;
+            margin: 50px 0px;
+            background: url('img.jpg');
+        }
+        footer{
+            background-color: blue;
+            color: plum;
+        }
+        .copyright{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="/img.jpg" alt="logo" height="30px" width="30px"></li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="image"></div>
+        <div class="container">
+            <div class="left"></div>
+            <div class="middle"></div>
+            <div class="right"></div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">
+            All The Copyright reserve To &copy; Sandip Maity
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+
+<!-- Create a header with content using css grid -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7 Practice Set</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+        }
+        ul li{
+            list-style-type: none;
+            margin: 0 20px;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+        header{
+            background-color: black;
+            color: white;
+        }
+        .container{
+            background-color: red;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maxime est ex dolore aut, nostrum at quasi, ut asperiores sed doloremque atque. Deserunt, libero reiciendis rerum earum repellat corporis ducimus enim necessitatibus quo officia!
+    </div>
+</body>
+</html>

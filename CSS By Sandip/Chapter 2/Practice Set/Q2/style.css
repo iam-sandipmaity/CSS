@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    background-color: black;
+    color: white;
+    /* height: 100px;
+    width: 100px; */
+}
+
+h1{
+    background-color: blue;
+}
+span{
+    background-color: grey;
+    color: gold;
+}
+
+.container{
+    /* background-color: darkred; */
+    color: red;
+}

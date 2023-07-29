@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    background-color: blue;
+    color: white;
+    width: 344px;
+    height: 1700px;
+}

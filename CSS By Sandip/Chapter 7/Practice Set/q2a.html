@@ -1,0 +1,88 @@
+<!-- Create a layout using css grid  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7 Practice Set</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+        }
+
+        ul {
+            display: inline-grid;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        ul li {
+            list-style-type: none;
+            margin: 10px 10px;
+            font-size: large;
+        }
+
+        .container {
+            height: 90vh;
+            display: inline-grid;
+            grid-template-columns: 50vw 50vw;
+            justify-content: space-between;
+            background-color: darkslategrey;
+        }
+
+        .left {
+            height: 50vh;
+            width: 40vw;
+            margin: 50px 50px 50px 100px;
+            background-color: blue;
+        }
+
+        .right {
+            height: 50vh;
+            width: 40vw;
+            margin: 50px;
+            background-color: rgb(134, 19, 187);
+        }
+        footer{
+            background-color: blue;
+            color: plum;
+        }
+        .copyright{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="/img.jpg" alt="logo" height="30px" width="30px"></li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="left">Left</div>
+            <div class="right">Right</div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">
+            All The Copyright reserve To &copy; Sandip Maity
+        </p>
+    </footer>
+</body>
+
+</html>

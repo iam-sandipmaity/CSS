@@ -1,0 +1,88 @@
+<!-- Demonstrate the difference between display:none and visibility:hidden using a div  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4 Practice Set</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .navbar{
+            background-color: black;
+            color: white;
+            height: 90px;
+        }
+        .navbar ul li {
+            display: inline-block;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .navbar ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        .left{
+            height: 90vh;
+            width: 50%;
+            background-color: red;
+            color: aqua;
+            display: inline-block;
+
+            
+            /*display : none and visibility : hidden*/
+            /* display: none; */
+            visibility: hidden;
+        }
+        .right{
+            height: 90vh;
+            width: 50%;
+            background-color: green;
+            color: aqua;
+            display: inline-block;
+        }
+        footer {
+            background-color: blue;
+            color: yellow;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Location</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="left">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates soluta quasi eligendi reprehenderit reiciendis, sint velit minima cumque asperiores cupiditate aliquam sunt omnis praesentium!
+        </div><div class="right">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, possimus. Exercitationem iste libero adipisci nobis eum, facilis iusto sed. Temporibus qui praesentium error asperiores similique possimus quae.
+        </div>
+    </main>
+    <footer>
+        <p class="center">
+            All The copywrite reserve To &copy; Sandip Maity
+        </p>
+    </footer>
+</body>
+</html>

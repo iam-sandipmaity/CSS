@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 15vh;
+    background-color: rgb(7, 7, 7);
+    color: white;
+    border: 2px solid aquamarine;
+}
+
+.content{
+    background-color: red;
+    height:80vh;
+    padding: 20px;
+    /* margin: 2px; */
+    border: 4px solid gold;
+}
+
+footer{
+    background-color: blueviolet;
+}
+
+.foot{
+    text-align: center;
+}

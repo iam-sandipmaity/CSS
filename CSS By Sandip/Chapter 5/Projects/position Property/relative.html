@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Position Property</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            background-color: black;
+            color: white;
+        }
+        nav ul li{
+            display: inline-block;
+            padding: 2vh 2vw;
+            margin: 10px;
+            font-size: 1em;
+        }
+        .container{
+            background-color: aqua;
+            width: 50vw;
+            height: 50vh;
+            margin: auto;
+            padding: 0px 10px;
+        }
+        p{
+            border: 4px solid gray;
+            margin: 2vh 3vw;
+        }
+        /* .box1{
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            position: relative;
+        } */
+
+        /* we can use box1 as a button by using the relative position  */
+        .like_bottom{
+            width: 20px;
+            height: 20px;
+            background-color: rgb(122, 15, 95);
+            /* background-image: url("bg.jpg"); */
+            position: relative;
+            left: 48vw;
+            bottom: 10vh;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(121, 28, 192);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis fugiat, inventore harum eligendi facere, non hic iure cumque rerum, exercitationem iusto. Molestias cumque nesciunt facere quos sequi sint exercitationem expedita voluptate eaque rem distinctio dolorum quas officiis, voluptatibus atque aut impedit sunt officia assumenda quia.
+            </p>
+            <div class="box1 like_bottom">
+                I am Box1
+            </div>
+            <div class="box2">
+                I am Box2
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>

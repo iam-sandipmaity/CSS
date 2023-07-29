@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .flex_container{
+            height: 150vh;
+            width: 100vw;
+            background-color: aqua;
+            border: 3px solid gray;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: center;
+            /* align-content: center; */
+        }
+        .flex_item{
+            background-color: red;
+            border: 3px solid black;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+        }
+        .item1{
+            order: 3;
+            flex-grow: 2;
+        }
+        .item2{
+            order: 2;
+            flex-shrink: 2;
+            align-self: center;
+        }
+        .item3{
+            order: 2;
+            /* align-self: flex-end; */
+        }
+        .item4{
+            order: 2;
+            flex-grow: 3;
+        }
+        .item5{
+            order: 2;
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex_container">
+        <div class="flex_item item1">1</div>
+        <div class="flex_item item2">2</div>
+        <div class="flex_item item3">3</div>
+        <div class="flex_item item4">4</div>
+        <div class="flex_item item5">5</div>
+    </div>
+</body>
+</html>

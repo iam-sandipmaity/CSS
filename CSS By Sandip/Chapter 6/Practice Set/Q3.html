@@ -1,0 +1,65 @@
+<!-- Create A navigation Bar :-- where logo , home , about , contact  will be in header nav bar. And in the main position make two div and they will stay differently in side of the web page Using FlexBox.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 Practice Set</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            height: 10vh;
+            background-color: black;
+            color: white;
+        }
+        
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 20px;
+            font-size: 5vh;
+        }
+        .logo{
+            padding: 20px 10px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        .left{
+            background-color: aqua;
+            height: 60vh;
+            width: 40vw;
+        }
+        .right{
+            background-color: rgb(227, 158, 7);
+            height: 60vh;
+            width: 40vw;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><img src="/bg.jpg" alt="logo" height="25px" width="25px"></li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, laborum.</div>
+            <div class="right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde vel ad aperiam veritatis optio eveniet ut autem libero accusamus nesciunt?</div>
+        </div>
+    </main>
+</body>
+</html>

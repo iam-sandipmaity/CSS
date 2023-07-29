@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cointainer{
+    width: 1314px;
+    height: 800px;
+    background-color: aqua;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100px 100px;
+    background-position: top center;
+    background-attachment: fixed;
+}
